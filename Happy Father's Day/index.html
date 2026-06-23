@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Father's Day Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>🎁 Father’s Day Generator</h1>
+
+  <!-- NAME INPUT -->
+  <div class="card">
+    <label>Enter Father’s Name</label>
+    <input type="text" id="nameInput" placeholder="Enter Your Name ">
+  </div>
+
+  <!-- CAMERA SECTION -->
+  <div class="card">
+    <h3>📸 Take Your Photo</h3>
+
+    <video id="video" autoplay></video>
+
+    <div class="buttons">
+      <button onclick="startCamera()">Start Camera</button>
+      <button onclick="capturePhoto()">Capture</button>
+    </div>
+
+    <canvas id="canvas" style="display:none;"></canvas>
+  </div>
+
+  <!-- GENERATE -->
+  <button class="generate" onclick="generateResult()">
+    ❤️ Generate Love Card
+  </button>
+
+  <!-- RESULT -->
+  <div id="result" class="result-card"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
